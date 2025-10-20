@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/ex01.css">
+</head>
+<body>
+    <h1 id="titulo">Aprendendo DOM</h1>
+    <p>É uma API que permite manipularmos o HTML com JS. O documento HTML é visto como "document" e terá associado a ele vários métodos.</p>
+    <ol>
+        <li>
+            getElementById("nome") - Pega o emlemento pelo id
+        </li>
+        <li>
+            innerHTML - Inserir ou mudar conteúdo <input type="button" value="Mudar" onclick="mudarTitulo()">
+        </li>
+        <li>
+            Mudar estilo <input type="button" value="Mudar estilo" onclick="mudarEstilo()">
+        </li>
+        <li>
+            classList - Insere uma classe ao elemento HTML 
+            <ul>
+                <li>
+                    .add - Adicioma uma classe ao elemento <input type="button" value="Destacar" onclick="destacar()">
+                </li>
+                <li>
+                    .remove - Remove uma classe do elemento. <input type="button" value="Remover" onclick="remover()">
+                </li>
+                <li>
+                    .toggle - Insere ou remove a classe se tiver o elemento. <input type="button" value="Alternar" onclick="alternar()">
+                </li>
+            </ul>
+        </li>
+        <li>
+            createElement - Cria elementos. <input type="button" value="Criar" onclick="adicionarTexto()"> <input type="button" value="Remover" onclick="removerTexto()"> <input type="button" value="Remover tudo" onclick="removerTudo()">
+        </li>
+        <li>
+            querySelectorAll - Seleciona vários elementos. <input type="button" value="Colorir" onclick="colorir()">
+        </li>
+    </ol>
+    <h2 id="titulo02">Olá mundo!</h2>
+    <div id="container">
+
+    </div>
+    <script type="text/javascript" src="js/ex01.js"></script>
+</body>
+</html>
